@@ -42,13 +42,33 @@
 
 // console.log(typeof null)
 
-let age = 30
-age = 31
-const birthYear = 1991
-// birthYear = 2001
-// const job;
-var job = 'programmer'
-job = 'teacher'
+// let age = 30
+// age = 31
+// const birthYear = 1991
+// // birthYear = 2001
+// // const job;
+// var job = 'programmer'
+// job = 'teacher'
 
-lastName = 'Ali'
-console.log(lastName)
+// lastName = 'Ali'
+// console.log(lastName)
+
+const now = 2037
+const ageZohaib = now - 2001
+const ageSarah = now - 2018
+console.log(ageZohaib, ageSarah)
+
+console.log(ageZohaib * 2, ageZohaib / 10, 2 ** 3)
+// 2 ** 3 mean 2 to the power of 3 , = 2 * 2 * 2
+
+const firstName = 'Zohaib'
+const lastName = 'Ali'
+console.log(firstName + " " + lastName)
+
+let x = 10 + 5
+x += 10  // x = x + 10
+x *= 4
+x++
+x--;x--
+console.log(x)
+
