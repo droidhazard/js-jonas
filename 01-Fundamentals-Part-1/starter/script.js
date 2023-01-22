@@ -117,7 +117,37 @@
 // console.log(markBMI_test2, johnBMI_test2)
 // console.log('is mark BMI higher than john ? ', markHigherBMI_test2)
 
-const firstName = 'Zohaib'
-const job = 'farigh'
-const birthYear = 2001
+// const firstName = 'Zohaib'
+// const job = 'farigh person'
+// const birthYear = 2001
+// const year = 2037
 
+// const zohaib = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!'
+// console.log(zohaib)
+
+// const zohaibNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`
+// console.log(zohaibNew)
+
+// console.log(`Just a regular string...`)
+
+// console.log('String with \n newline');
+// console.log(`String with 
+// newline`)
+
+const age = 19
+
+if (age >= 18) {
+  console.log('You can start driving license');
+} else {
+  const yearsLeft = 18 - age
+  console.log(`You still have ${yearsLeft} years to go`)
+}
+
+let century;
+const birthYear = 2001
+if (birthYear <= 2000) {
+  century = 20
+} else {
+  century = 21
+}
+console.log(`You were born in ${century} century`)
