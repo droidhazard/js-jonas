@@ -93,30 +93,6 @@
 // const averageAge = (ageZohaib + ageSarah) / 2
 // console.log(averageAge)
 
-// const markMass_test1 = 78
-// const markHeight_test1  = 1.69
-// const johnMass_test1 = 92
-// const johnHeight_test1 = 1.95
-
-// const markBMI_test1 = markMass_test1 / (markHeight_test1 ** 2)
-// const johnBMI_test1 = johnMass_test1 / (johnHeight_test1 ** 2)
-
-// const markHigherBMI_test1 = markBMI_test1 > johnBMI_test1
-// console.log(markBMI_test1, johnBMI_test1)
-// console.log('is mark BMI higher than john ? ', markHigherBMI_test1)
-
-// const markMass_test2 = 95
-// const markHeight_test2  = 1.88
-// const johnMass_test2 = 85
-// const johnHeight_test2 = 1.76
-
-// const markBMI_test2 = markMass_test2 / (markHeight_test2 ** 2)
-// const johnBMI_test2 = johnMass_test2 / (johnHeight_test2 ** 2)
-
-// const markHigherBMI_test2 = markBMI_test2 > johnBMI_test2
-// console.log(markBMI_test2, johnBMI_test2)
-// console.log('is mark BMI higher than john ? ', markHigherBMI_test2)
-
 // const firstName = 'Zohaib'
 // const job = 'farigh person'
 // const birthYear = 2001
@@ -134,20 +110,52 @@
 // console.log(`String with 
 // newline`)
 
-const age = 19
+// const age = 19
 
-if (age >= 18) {
-  console.log('You can start driving license');
+// if (age >= 18) {
+//   console.log('You can start driving license');
+// } else {
+//   const yearsLeft = 18 - age
+//   console.log(`You still have ${yearsLeft} years to go`)
+// }
+
+// let century;
+// const birthYear = 2001
+// if (birthYear <= 2000) {
+//   century = 20
+// } else {
+//   century = 21
+// }
+// console.log(`You were born in ${century} century`)
+
+const markMass_test1 = 78
+const markHeight_test1  = 1.69
+const johnMass_test1 = 92
+const johnHeight_test1 = 1.95
+
+const markBMI_test1 = markMass_test1 / (markHeight_test1 ** 2)
+const johnBMI_test1 = johnMass_test1 / (johnHeight_test1 ** 2)
+
+const markHigherBMI_test1 = markBMI_test1 > johnBMI_test1
+
+const markMass_test2 = 95
+const markHeight_test2  = 1.88
+const johnMass_test2 = 85
+const johnHeight_test2 = 1.76
+
+const markBMI_test2 = markMass_test2 / (markHeight_test2 ** 2)
+const johnBMI_test2 = johnMass_test2 / (johnHeight_test2 ** 2)
+
+const markHigherBMI_test2 = markBMI_test2 > johnBMI_test2
+
+if (markBMI_test1 > johnBMI_test1) {
+  console.log(`Mark's BMI ${markBMI_test1} is higher than John's ${johnBMI_test1}`)
 } else {
-  const yearsLeft = 18 - age
-  console.log(`You still have ${yearsLeft} years to go`)
+  console.log(`John's BMI ${johnBMI_test1} is higher than Mark's ${markBMI_test1}`)
 }
 
-let century;
-const birthYear = 2001
-if (birthYear <= 2000) {
-  century = 20
+if (markBMI_test2 > johnBMI_test2) {
+  console.log(`Mark's BMI ${markBMI_test2} is higher than John's ${johnBMI_test2}`)
 } else {
-  century = 21
+  console.log(`John's BMI ${johnBMI_test2} is higher than Mark's ${markBMI_test2}`)
 }
-console.log(`You were born in ${century} century`)
