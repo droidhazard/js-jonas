@@ -128,34 +128,82 @@
 // }
 // console.log(`You were born in ${century} century`)
 
-const markMass_test1 = 78
-const markHeight_test1  = 1.69
-const johnMass_test1 = 92
-const johnHeight_test1 = 1.95
+// const markMass_test1 = 78
+// const markHeight_test1  = 1.69
+// const johnMass_test1 = 92
+// const johnHeight_test1 = 1.95
 
-const markBMI_test1 = markMass_test1 / (markHeight_test1 ** 2)
-const johnBMI_test1 = johnMass_test1 / (johnHeight_test1 ** 2)
+// const markBMI_test1 = markMass_test1 / (markHeight_test1 ** 2)
+// const johnBMI_test1 = johnMass_test1 / (johnHeight_test1 ** 2)
 
-const markHigherBMI_test1 = markBMI_test1 > johnBMI_test1
+// const markHigherBMI_test1 = markBMI_test1 > johnBMI_test1
 
-const markMass_test2 = 95
-const markHeight_test2  = 1.88
-const johnMass_test2 = 85
-const johnHeight_test2 = 1.76
+// const markMass_test2 = 95
+// const markHeight_test2  = 1.88
+// const johnMass_test2 = 85
+// const johnHeight_test2 = 1.76
 
-const markBMI_test2 = markMass_test2 / (markHeight_test2 ** 2)
-const johnBMI_test2 = johnMass_test2 / (johnHeight_test2 ** 2)
+// const markBMI_test2 = markMass_test2 / (markHeight_test2 ** 2)
+// const johnBMI_test2 = johnMass_test2 / (johnHeight_test2 ** 2)
 
-const markHigherBMI_test2 = markBMI_test2 > johnBMI_test2
+// const markHigherBMI_test2 = markBMI_test2 > johnBMI_test2
 
-if (markBMI_test1 > johnBMI_test1) {
-  console.log(`Mark's BMI ${markBMI_test1} is higher than John's ${johnBMI_test1}`)
-} else {
-  console.log(`John's BMI ${johnBMI_test1} is higher than Mark's ${markBMI_test1}`)
-}
+// if (markBMI_test1 > johnBMI_test1) {
+//   console.log(`Mark's BMI ${markBMI_test1} is higher than John's ${johnBMI_test1}`)
+// } else {
+//   console.log(`John's BMI ${johnBMI_test1} is higher than Mark's ${markBMI_test1}`)
+// }
 
-if (markBMI_test2 > johnBMI_test2) {
-  console.log(`Mark's BMI ${markBMI_test2} is higher than John's ${johnBMI_test2}`)
-} else {
-  console.log(`John's BMI ${johnBMI_test2} is higher than Mark's ${markBMI_test2}`)
+// if (markBMI_test2 > johnBMI_test2) {
+//   console.log(`Mark's BMI ${markBMI_test2} is higher than John's ${johnBMI_test2}`)
+// } else {
+//   console.log(`John's BMI ${johnBMI_test2} is higher than Mark's ${markBMI_test2}`)
+// }
+
+// let inputYear = '1991'
+// console.log(Number(inputYear), inputYear)
+// console.log(Number(inputYear) + 18)
+// inputYear = Number(inputYear)
+// console.log(inputYear)
+
+// console.log(Number('Zohaib'))
+// console.log(typeof NaN)
+
+// console.log(String(23), 23)
+
+// // // Type Coerction
+// console.log('I m ' + 23 + ' years old')
+// console.log('I m ' + '23' + ' years old')
+// console.log('23' - '10' - 3)
+// console.log('23' + '10' + 3)
+// console.log('23' * '2')
+// console.log('23' / '2')
+
+// let n = '1' + 1
+// n = n - 1
+// console.log(n)
+
+// // 5 falsy values: 0, '', undefined, null, Nan
+// console.log(Boolean(0), Boolean(''), Boolean(undefined), Boolean(null), Boolean(NaN))
+// console.log(Boolean('Droid'))
+// console.log(Boolean({}))
+// console.log(Boolean(1122))
+
+// const money = 0
+// if (money) {
+//   console.log('you hev money')
+// } else {
+//   console.log('u got no mony')
+// }
+
+// let height
+// if (height) {
+//   console.log('yay! height is defined')
+// } else {
+//   console.log('noo! height is UNDEFINED')
+// }
+
+const age = 18
+if (age === 18) {
+  
 }
