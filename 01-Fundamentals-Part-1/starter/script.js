@@ -331,3 +331,22 @@
 // }
 // const me = 'Zohaib'
 // console.log(`I'm ${2037 - 1991} years old. ${me}`)
+
+const age = 23
+age >= 18 ? console.log('I am an adult') : console.log('I am still a kid')
+
+console.log(`Zohaib ${age >= 18 ? 'adult' : 'small'}`)
+
+const personAge = age >= 18 ? 'big' : 'small'
+console.log('Zohaib is ' + personAge)
+
+let drink2
+if (age >= 18) {
+  drink2 = 'wine'
+} else {
+  drink2 = 'water'
+}
+
+console.log(drink2)
+
+console.log(`I like to drink ${age >= 18 ? 'cold-drink' : 'water'}`)
