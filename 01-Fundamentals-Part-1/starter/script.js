@@ -203,22 +203,46 @@
 //   console.log('noo! height is UNDEFINED')
 // }
 
-const age = '18'
-if (age === 18) console.log('You just became an adult (strict)')
+// const age = '18'
+// if (age === 18) console.log('You just became an adult (strict)')
 
-if (age == 18) console.log('You just became an adult (loose)')
+// if (age == 18) console.log('You just became an adult (loose)')
 
-const favorite = prompt("What's your favorite number?")
-console.log(typeof favorite)
+// const favorite = prompt("What's your favorite number?")
+// console.log(typeof favorite)
 
-if (Number(favorite) === 23) {
-  console.log('Cool! 23 is an amazing number1')
-} else if (Number(favorite) === 7 ) {
-  console.log('7 is also a cool number')
-} else if (Number(favorite) === 9 ) {
-  console.log('9 is also a cool number')
-} else {
-  console.log('Number is not 23, 7 or 9')
-}
+// if (Number(favorite) === 23) {
+//   console.log('Cool! 23 is an amazing number1')
+// } else if (Number(favorite) === 7 ) {
+//   console.log('7 is also a cool number')
+// } else if (Number(favorite) === 9 ) {
+//   console.log('9 is also a cool number')
+// } else {
+//   console.log('Number is not 23, 7 or 9')
+// }
 
-if (Number(favorite) !== 23) console.log('Why not 23 ?')
+// if (Number(favorite) !== 23) console.log('Why not 23 ?')
+
+// const hasDriversLicense = true // A
+// const hasGoodVision = true // B
+
+// console.log(hasDriversLicense && hasGoodVision)
+// console.log(hasDriversLicense || hasGoodVision)
+// console.log(!hasDriversLicense)
+// console.log(!hasGoodVision)
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log('Sarah is able to drive')
+// } else {
+//   console.log('Someone else should drive')
+// }
+
+// const isTired = true // C
+// console.log(hasDriversLicense && hasGoodVision && isTired)
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log('Sarah is able to drive')
+// } else {
+//   console.log('Someone else should drive')
+// }
+
