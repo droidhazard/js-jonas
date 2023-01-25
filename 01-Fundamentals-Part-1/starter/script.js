@@ -246,40 +246,81 @@
 //   console.log('Someone else should drive')
 // }
 
-const dolphins_score_1 = 96
-const dolphins_score_2 = 108
-const dolphins_score_3 = 89
+// const dolphins_score_1 = 96
+// const dolphins_score_2 = 108
+// const dolphins_score_3 = 89
 
-const koalas_score_1 = 88
-const koalas_score_2 = 91
-const koalas_score_3 = 110
+// const koalas_score_1 = 88
+// const koalas_score_2 = 91
+// const koalas_score_3 = 110
 
-const dolphinsAverage = (dolphins_score_1 + dolphins_score_2 + dolphins_score_3) / 3
-const koalasAverage = (koalas_score_1 + koalas_score_2 + koalas_score_3) / 3
+// const dolphinsAverage = (dolphins_score_1 + dolphins_score_2 + dolphins_score_3) / 3
+// const koalasAverage = (koalas_score_1 + koalas_score_2 + koalas_score_3) / 3
 
-if (dolphinsAverage > koalasAverage) {
-  console.log(`Dolphin Wins, D:${dolphinsAverage} K:${koalasAverage}`);
-} else if (dolphinsAverage < koalasAverage) {
-  console.log(`Koalas Wins, K:${koalasAverage} D:${dolphinsAverage}`);
-} else {
-  console.log(`Match Draw, K:${koalasAverage} D:${dolphinsAverage}`);
+// if (dolphinsAverage > koalasAverage) {
+//   console.log(`Dolphin Wins, D:${dolphinsAverage} K:${koalasAverage}`);
+// } else if (dolphinsAverage < koalasAverage) {
+//   console.log(`Koalas Wins, K:${koalasAverage} D:${dolphinsAverage}`);
+// } else {
+//   console.log(`Match Draw, K:${koalasAverage} D:${dolphinsAverage}`);
+// }
+
+// const dolphins_score_1_2 = 97
+// const dolphins_score_2_2 = 112
+// const dolphins_score_3_2 = 101
+
+// const koalas_score_1_2 = 109
+// const koalas_score_2_2 = 95
+// const koalas_score_3_2 = 123
+
+// const dolphinsAverage_2 = (dolphins_score_1_2 + dolphins_score_2_2 + dolphins_score_3_2) / 3
+// const koalasAverage_2 = (koalas_score_1_2 + koalas_score_2_2 + koalas_score_3_2) / 3
+
+// if (dolphinsAverage_2 > koalasAverage_2 && dolphinsAverage_2 >= 100) {
+//   console.log(`Dolphin Wins, D:${dolphinsAverage_2} K:${koalasAverage_2}`);
+// } else if (dolphinsAverage_2 < koalasAverage_2 && koalasAverage_2 >= 100) {
+//   console.log(`Koalas Wins, K:${koalasAverage_2} D:${dolphinsAverage_2}`);
+// } else {
+//   console.log(`Match Draw, K:${koalasAverage_2} D:${dolphinsAverage_2}`);
+// }
+
+const day = 'monday'
+
+switch(day) {
+  case 'monday': // day === 'monday'
+    console.log('Plan course structure')
+    console.log('Go to coding meetup')
+    break
+  case 'tuesday':
+    console.log('Prepare theory videos')
+    break
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples')
+    break
+  case 'friday':
+    console.log('Record videos')
+    break
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekend!')
+    break
+  default:
+    console.log('Not a valid day')
+    break
 }
 
-const dolphins_score_1_2 = 97
-const dolphins_score_2_2 = 112
-const dolphins_score_3_2 = 101
-
-const koalas_score_1_2 = 109
-const koalas_score_2_2 = 95
-const koalas_score_3_2 = 123
-
-const dolphinsAverage_2 = (dolphins_score_1_2 + dolphins_score_2_2 + dolphins_score_3_2) / 3
-const koalasAverage_2 = (koalas_score_1_2 + koalas_score_2_2 + koalas_score_3_2) / 3
-
-if (dolphinsAverage_2 > koalasAverage_2 && dolphinsAverage_2 >= 100) {
-  console.log(`Dolphin Wins, D:${dolphinsAverage_2} K:${koalasAverage_2}`);
-} else if (dolphinsAverage_2 < koalasAverage_2 && koalasAverage_2 >= 100) {
-  console.log(`Koalas Wins, K:${koalasAverage_2} D:${dolphinsAverage_2}`);
+if (day === 'monday') {
+  console.log('Plan course structure')
+  console.log('Go to coding meetup')
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos')
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('Write code examples')
+} else if (day === 'friday') {
+  console.log('Record videos')
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('Enjoy the weekend!')
 } else {
-  console.log(`Match Draw, K:${koalasAverage_2} D:${dolphinsAverage_2}`);
+  console.log('Not a valid day')
 }
