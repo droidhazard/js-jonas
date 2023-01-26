@@ -332,21 +332,35 @@
 // const me = 'Zohaib'
 // console.log(`I'm ${2037 - 1991} years old. ${me}`)
 
-const age = 23
-age >= 18 ? console.log('I am an adult') : console.log('I am still a kid')
+// const age = 23
+// age >= 18 ? console.log('I am an adult') : console.log('I am still a kid')
 
-console.log(`Zohaib ${age >= 18 ? 'adult' : 'small'}`)
+// console.log(`Zohaib ${age >= 18 ? 'adult' : 'small'}`)
 
-const personAge = age >= 18 ? 'big' : 'small'
-console.log('Zohaib is ' + personAge)
+// const personAge = age >= 18 ? 'big' : 'small'
+// console.log('Zohaib is ' + personAge)
 
-let drink2
-if (age >= 18) {
-  drink2 = 'wine'
-} else {
-  drink2 = 'water'
-}
+// let drink2
+// if (age >= 18) {
+//   drink2 = 'wine'
+// } else {
+//   drink2 = 'water'
+// }
 
-console.log(drink2)
+// console.log(drink2)
 
-console.log(`I like to drink ${age >= 18 ? 'cold-drink' : 'water'}`)
+// console.log(`I like to drink ${age >= 18 ? 'cold-drink' : 'water'}`)
+
+const billValue_1 = 275
+const billValue_2 = 40
+const billValue_3 = 430
+
+const bill = billValue_1
+
+let tipPercentage = 0;
+
+bill >= 50 || bill >= 300 ? tipPercentage = 15 : 20
+tipAmount = (bill / 100) * tipPercentage
+totalBill = bill + tipAmount
+
+console.log(`The bill was ${bill}, the tip was ${tipAmount}, and the total value is ${totalBill}`)
