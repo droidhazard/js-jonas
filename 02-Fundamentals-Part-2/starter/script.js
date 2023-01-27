@@ -10,25 +10,40 @@
 // const private = 535
 // const if = 23
 
-function logger() {
-  console.log('My name is Zohaib')
+// function logger() {
+//   console.log('My name is Zohaib')
+// }
+
+// // calling / running / invoking
+// logger(23)
+// logger()
+// logger()
+
+// function fruitProcessor(apples, oranges) {
+//   // console.log(apples, oranges)
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`
+//   return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0)
+// console.log(fruitProcessor(5, 0))
+
+// const appleOrangeJuice = fruitProcessor(2, 4)
+// console.log(appleOrangeJuice)
+
+// Function Declaration
+function calcAge1(birthYear) {
+  return 2023 - birthYear;
 }
 
-// calling / running / invoking
-logger(23)
-logger()
-logger()
+const age1 = calcAge1(2001)
 
-function fruitProcessor(apples, oranges) {
-  // console.log(apples, oranges)
-  const juice = `Juice with ${apples} apples and ${oranges} oranges.`
-  return juice;
+// Function Expression
+const calcAge2 = function (birthYear) {
+  return 2023 - birthYear;
 }
 
-const appleJuice = fruitProcessor(5, 0)
-console.log(fruitProcessor(5, 0))
+const age2 = calcAge2(2001)
 
-const appleOrangeJuice = fruitProcessor(2, 4)
-console.log(appleOrangeJuice)
-
+console.log(age1, age2)
 
