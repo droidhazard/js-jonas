@@ -49,16 +49,38 @@
 
 // Arrow function
 
-const calcAge3 = birthYear => 2037 - birthYear
-const age3 = calcAge3(2004)
-console.log(age3)
+// const calcAge3 = birthYear => 2037 - birthYear
+// const age3 = calcAge3(2004)
+// console.log(age3)
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = 2037 - birthYear
-  const retirement = 65 - age
-  // return retirement;
-  return `${firstName} retires in ${retirement} years`
-}
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = 2037 - birthYear
+//   const retirement = 65 - age
+//   // return retirement;
+//   return `${firstName} retires in ${retirement} years`
+// }
 
-console.log(yearsUntilRetirement(2002, 'zohaib'))
-console.log(yearsUntilRetirement(2001, 'droid'))
+// console.log(yearsUntilRetirement(2002, 'zohaib'))
+// console.log(yearsUntilRetirement(2001, 'droid'))
+
+// function cutFruitPieces(fruit) {
+//   return fruit * 4
+// }
+
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitPieces(apples)
+//   const orangePieces = cutFruitPieces(oranges)
+  
+//   const juice = `Juice with ${applePieces} apples pieces and ${orangePieces} orange pieces.`
+//   return juice;
+// }
+
+// console.log(fruitProcessor(2, 3))
+
+// // const disBtn = document.getElementById('dis-btn')
+// // let spanZero = document.getElementById('span-zero').innerHTML
+// // function disableMe() {
+// //   if (spanZero === '0') {
+// //     disBtn.setAttribute('disabled', true)
+// //   }
+// // }
