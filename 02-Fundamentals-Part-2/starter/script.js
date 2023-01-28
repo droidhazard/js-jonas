@@ -103,25 +103,57 @@
 // console.log(yearsUntilRetirement(2001, 'Zohaib'))
 // console.log(yearsUntilRetirement(1950, 'Mike'))
 
-const calcAverage = (round_1, round_2, round_3) => {
-  return (round_1 + round_2 + round_3) / 3
+// const calcAverage = (round_1, round_2, round_3) => {
+//   return (round_1 + round_2 + round_3) / 3
+// }
+
+// const avgDolphins_match_1 = calcAverage(44, 23, 71)
+// const avgKoalas_match_1 = calcAverage(65, 54, 49)
+
+// const avgDolphins_match_2 = calcAverage(85, 54, 41)
+// const avgKoalas_match_2 = calcAverage(23, 34, 27)
+
+// function checkWinner(avgDolphins, avgKoalas) {
+//   if (avgDolphins >= avgKoalas * 2) {
+//     console.log(`Dolphin wins, (${avgDolphins} vs ${avgKoalas})`)
+//   } else if (avgKoalas >= avgDolphins * 2) {
+//     console.log(`Koalas wins, (${avgKoalas} vs ${avgDolphins})`)
+//   } else {
+//     console.log(`Nobody wins, (D: ${avgDolphins}, K: ${avgKoalas})`)
+//   }
+// }
+
+// checkWinner(avgDolphins_match_1, avgKoalas_match_1)
+// checkWinner(avgDolphins_match_2, avgKoalas_match_2)
+
+const friends = ['Michael', 'Steven', 'Peter']
+console.log(friends)
+
+const years = new Array(1991, 1984, 2008, 2020)
+console.log(friends[0])
+console.log(friends[2])
+
+console.log(friends.length)
+console.log(friends.length - 1)
+
+friends[2] = 'Shan'
+console.log(friends)
+
+const firstName = 'Zohaib'
+const zohaib = [firstName, 'Ali', 2022 - 2001, 'Programmer', friends]
+console.log(zohaib)
+console.log(zohaib.length)
+
+// Exercise
+const calcAge = function(birthYear) {
+  return 2037 - birthYear
 }
 
-const avgDolphins_match_1 = calcAverage(44, 23, 71)
-const avgKoalas_match_1 = calcAverage(65, 54, 49)
+const birth_Years = [1990, 1967, 2002, 2010, 2018]
 
-const avgDolphins_match_2 = calcAverage(85, 54, 41)
-const avgKoalas_match_2 = calcAverage(23, 34, 27)
-
-function checkWinner(avgDolphins, avgKoalas) {
-  if (avgDolphins >= avgKoalas * 2) {
-    console.log(`Dolphin wins, (${avgDolphins} vs ${avgKoalas})`)
-  } else if (avgKoalas >= avgDolphins * 2) {
-    console.log(`Koalas wins, (${avgKoalas} vs ${avgDolphins})`)
-  } else {
-    console.log(`Nobody wins, (D: ${avgDolphins}, K: ${avgKoalas})`)
-  }
-}
-
-checkWinner(avgDolphins_match_1, avgKoalas_match_1)
-checkWinner(avgDolphins_match_2, avgKoalas_match_2)
+const age1 = calcAge(birth_Years[0])
+const age2 = calcAge(birth_Years[1])
+const age3 = calcAge(birth_Years[years.length - 1])
+console.log(age1, age2, age3)
+const ages = [age1, age2, age3]
+console.log(ages)
