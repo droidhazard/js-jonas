@@ -126,34 +126,65 @@
 // checkWinner(avgDolphins_match_1, avgKoalas_match_1)
 // checkWinner(avgDolphins_match_2, avgKoalas_match_2)
 
+// const friends = ['Michael', 'Steven', 'Peter']
+// console.log(friends)
+
+// const years = new Array(1991, 1984, 2008, 2020)
+// console.log(friends[0])
+// console.log(friends[2])
+
+// console.log(friends.length)
+// console.log(friends.length - 1)
+
+// friends[2] = 'Shan'
+// console.log(friends)
+
+// const firstName = 'Zohaib'
+// const zohaib = [firstName, 'Ali', 2022 - 2001, 'Programmer', friends]
+// console.log(zohaib)
+// console.log(zohaib.length)
+
+// // Exercise
+// const calcAge = function(birthYear) {
+//   return 2037 - birthYear
+// }
+
+// const birth_Years = [1990, 1967, 2002, 2010, 2018]
+
+// const age1 = calcAge(birth_Years[0])
+// const age2 = calcAge(birth_Years[1])
+// const age3 = calcAge(birth_Years[years.length - 1])
+// console.log(age1, age2, age3)
+// const ages = [age1, age2, age3]
+// console.log(ages)
+
 const friends = ['Michael', 'Steven', 'Peter']
+
+// * Add Elements
+// friends.push('Bilal')
+const newLength = friends.push('Bilal')
+console.log(friends)
+console.log(newLength)
+friends.unshift('John')
 console.log(friends)
 
-const years = new Array(1991, 1984, 2008, 2020)
-console.log(friends[0])
-console.log(friends[2])
-
-console.log(friends.length)
-console.log(friends.length - 1)
-
-friends[2] = 'Shan'
+// * Remove Elements
+friends.pop()
+const popped = friends.pop()
+console.log(friends)
+console.log(popped)
+friends.shift()
 console.log(friends)
 
-const firstName = 'Zohaib'
-const zohaib = [firstName, 'Ali', 2022 - 2001, 'Programmer', friends]
-console.log(zohaib)
-console.log(zohaib.length)
+console.log(friends.indexOf('Steven'))
+console.log(friends.indexOf('Joker'))
+console.log(friends.includes('Michael'))
+console.log(friends.includes('Helena'))
+friends.push(23)
+console.log(friends.includes('23'))
 
-// Exercise
-const calcAge = function(birthYear) {
-  return 2037 - birthYear
+if (friends.includes('Peter')) {
+  console.log('You have a friend called Peter')
+} else {
+  console.log('You don`t have a friend called Peter')
 }
-
-const birth_Years = [1990, 1967, 2002, 2010, 2018]
-
-const age1 = calcAge(birth_Years[0])
-const age2 = calcAge(birth_Years[1])
-const age3 = calcAge(birth_Years[years.length - 1])
-console.log(age1, age2, age3)
-const ages = [age1, age2, age3]
-console.log(ages)
