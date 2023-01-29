@@ -158,33 +158,44 @@
 // const ages = [age1, age2, age3]
 // console.log(ages)
 
-const friends = ['Michael', 'Steven', 'Peter']
+// const friends = ['Michael', 'Steven', 'Peter']
 
-// * Add Elements
-// friends.push('Bilal')
-const newLength = friends.push('Bilal')
-console.log(friends)
-console.log(newLength)
-friends.unshift('John')
-console.log(friends)
+// // * Add Elements
+// // friends.push('Bilal')
+// const newLength = friends.push('Bilal')
+// console.log(friends)
+// console.log(newLength)
+// friends.unshift('John')
+// console.log(friends)
 
-// * Remove Elements
-friends.pop()
-const popped = friends.pop()
-console.log(friends)
-console.log(popped)
-friends.shift()
-console.log(friends)
+// // * Remove Elements
+// friends.pop()
+// const popped = friends.pop()
+// console.log(friends)
+// console.log(popped)
+// friends.shift()
+// console.log(friends)
 
-console.log(friends.indexOf('Steven'))
-console.log(friends.indexOf('Joker'))
-console.log(friends.includes('Michael'))
-console.log(friends.includes('Helena'))
-friends.push(23)
-console.log(friends.includes('23'))
+// console.log(friends.indexOf('Steven'))
+// console.log(friends.indexOf('Joker'))
+// console.log(friends.includes('Michael'))
+// console.log(friends.includes('Helena'))
+// friends.push(23)
+// console.log(friends.includes('23'))
 
-if (friends.includes('Peter')) {
-  console.log('You have a friend called Peter')
-} else {
-  console.log('You don`t have a friend called Peter')
+// if (friends.includes('Peter')) {
+//   console.log('You have a friend called Peter')
+// } else {
+//   console.log('You don`t have a friend called Peter')
+// }
+
+const bills = [125, 555, 44]
+const calcTip = (bill) => {
+  let tipPercentage = 0
+  bill >= 300 ? tipPercentage = 20 : tipPercentage = 15
+  const tipAmount = (bill / 100) * tipPercentage
+  console.log(`The Bill value was ${bill}, The Tip being ${tipPercentage}%:${tipAmount}, Your total bill is ${bill+tipAmount}`)
 }
+calcTip(bills[0])
+calcTip(bills[1])
+calcTip(bills[2])
