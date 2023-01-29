@@ -189,13 +189,21 @@
 //   console.log('You don`t have a friend called Peter')
 // }
 
-const bills = [125, 555, 44]
-const calcTip = (bill) => {
-  let tipPercentage = 0
-  bill >= 300 ? tipPercentage = 20 : tipPercentage = 15
-  const tipAmount = (bill / 100) * tipPercentage
-  console.log(`The Bill value was ${bill}, The Tip being ${tipPercentage}%:${tipAmount}, Your total bill is ${bill+tipAmount}`)
+// const bills = [125, 555, 44]
+// const calcTip = (bill) => {
+//   let tipPercentage = 0
+//   bill >= 300 ? tipPercentage = 20 : tipPercentage = 15
+//   const tipAmount = (bill / 100) * tipPercentage
+//   console.log(`The Bill value was ${bill}, The Tip being ${tipPercentage}%:${tipAmount}, Your total bill is ${bill+tipAmount}`)
+// }
+// calcTip(bills[0])
+// calcTip(bills[1])
+// calcTip(bills[2])
+
+const zohaib = {
+  firstName: 'Zohaib',
+  lastName: 'Ali',
+  age: 2037 - 2001,
+  job: 'coder',
+  friends: ['one', 'two', 'three']
 }
-calcTip(bills[0])
-calcTip(bills[1])
-calcTip(bills[2])
