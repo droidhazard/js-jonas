@@ -200,35 +200,68 @@
 // calcTip(bills[1])
 // calcTip(bills[2])
 
+// const zohaib = {
+//   firstName: 'Zohaib',
+//   lastName: 'Ali',
+//   age: 2037 - 2001,
+//   job: 'coder',
+//   friends: ['Michael', 'Peter', 'Steven']
+// }
+
+// console.log(zohaib)
+// console.log(zohaib.lastName)
+// console.log(zohaib['lastName'])
+// const nameKey = 'Name'
+// console.log(zohaib['first' + nameKey])
+// console.log(zohaib['last' + nameKey])
+
+// const interestedIn = prompt('What do you want to know about Zohaib ? choose between firstName, lastName, age, job, friends')
+
+// if(zohaib[interestedIn]) {
+//   console.log(zohaib[interestedIn])
+// } else {
+//   console.log("Wrong Request!")
+// }
+
+// zohaib.location = 'Mirpur Khas'
+// zohaib['facebook'] = 'z0335'
+
+// console.log(zohaib)
+
+// // Zohaib has 3 friends, and his best friends is called Michael
+
+// console.log(`${zohaib.firstName} has ${zohaib.friends.length} friends, and his best friend is called ${zohaib['friends'][0]}`)
+
 const zohaib = {
   firstName: 'Zohaib',
   lastName: 'Ali',
-  age: 2037 - 2001,
+  birthYear: 2001,
   job: 'coder',
-  friends: ['Michael', 'Peter', 'Steven']
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true,
+
+  // calcAge: function(birthYear) {
+  //   return 2037 - birthYear
+  // }
+  // calcAge: function() {
+  //   console.log(this)
+  //   return 2037 - this.birthYear
+  // }
+  calcAge: function() {
+    this.age = 2037 - this.birthYear
+    return this.age
+  },
+  summarise: function() {
+    // Jonas is a 46-year old teacher, and he has a/no driver's license
+    this.summary = `${this.firstName} is a ${this.calcAge()}-old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+    return this.summary
+  }
 }
 
-console.log(zohaib)
-console.log(zohaib.lastName)
-console.log(zohaib['lastName'])
-const nameKey = 'Name'
-console.log(zohaib['first' + nameKey])
-console.log(zohaib['last' + nameKey])
-
-const interestedIn = prompt('What do you want to know about Zohaib ? choose between firstName, lastName, age, job, friends')
-
-if(zohaib[interestedIn]) {
-  console.log(zohaib[interestedIn])
-} else {
-  console.log("Wrong Request!")
-}
-
-zohaib.location = 'Mirpur Khas'
-zohaib['facebook'] = 'z0335'
-
-console.log(zohaib)
-
-// Zohaib has 3 friends, and his best friends is called Michael
-
-console.log(`${zohaib.firstName} has ${zohaib.friends.length} friends, and his best friend is called ${zohaib['friends'][0]}`)
-
+console.log(zohaib.calcAge())
+console.log(zohaib['calcAge']())
+console.log(`Zohaib's age is ${zohaib.age}`)
+console.log(zohaib.age)
+console.log(zohaib.age)
+console.log(zohaib.age)
+console.log(zohaib.summarise())
