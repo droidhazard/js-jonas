@@ -266,33 +266,49 @@
 // console.log(zohaib.age)
 // console.log(zohaib.summarise())
 
-const mark = {
-  firstName: 'Mark',
-  lastName: 'Miller',
-  weight: 78,
-  height: 1.69,
-  calcBMI: function() {
-    this.bmi = this.weight / (this.height ** 2)
-  }
-}
+// const mark = {
+//   firstName: 'Mark',
+//   lastName: 'Miller',
+//   weight: 78,
+//   height: 1.69,
+//   calcBMI: function() {
+//     this.bmi = this.weight / (this.height ** 2)
+//   }
+// }
 
-const john = {
-  firstName: 'John',
-  lastName: 'Smith',
-  weight: 92,
-  height: 1.95,
-  calcBMI: function() {
-    this.bmi = this.weight / (this.height ** 2)
-  }
-}
+// const john = {
+//   firstName: 'John',
+//   lastName: 'Smith',
+//   weight: 92,
+//   height: 1.95,
+//   calcBMI: function() {
+//     this.bmi = this.weight / (this.height ** 2)
+//   }
+// }
 
-mark.calcBMI()
-const markBMI = mark.bmi
-john.calcBMI()
-const johnBMI = john.bmi
+// mark.calcBMI()
+// const markBMI = mark.bmi
+// john.calcBMI()
+// const johnBMI = john.bmi
 
-if (markBMI > johnBMI) {
-  console.log(`${mark.firstName} ${mark.lastName}'s BMI ${markBMI} is higher than ${john.firstName} ${john.lastName}'s ${johnBMI}`)
-} else {
-  console.log(`${john.firstName} ${john.lastName}'s BMI ${johnBMI} is higher than ${mark.firstName} ${mark.lastName}'s ${markBMI}`)
+// if (markBMI > johnBMI) {
+//   console.log(`${mark.firstName} ${mark.lastName}'s BMI ${markBMI} is higher than ${john.firstName} ${john.lastName}'s ${johnBMI}`)
+// } else {
+//   console.log(`${john.firstName} ${john.lastName}'s BMI ${johnBMI} is higher than ${mark.firstName} ${mark.lastName}'s ${markBMI}`)
+// }
+
+// console.log('Lifting weight repetition 1')
+// console.log('Lifting weight repetition 2')
+// console.log('Lifting weight repetition 3')
+// console.log('Lifting weight repetition 4')
+// console.log('Lifting weight repetition 5')
+// console.log('Lifting weight repetition 6')
+// console.log('Lifting weight repetition 7')
+// console.log('Lifting weight repetition 8')
+// console.log('Lifting weight repetition 9')
+// console.log('Lifting weight repetition 10')
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repetition ${rep}`)
 }
