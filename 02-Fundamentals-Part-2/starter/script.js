@@ -232,36 +232,67 @@
 
 // console.log(`${zohaib.firstName} has ${zohaib.friends.length} friends, and his best friend is called ${zohaib['friends'][0]}`)
 
-const zohaib = {
-  firstName: 'Zohaib',
-  lastName: 'Ali',
-  birthYear: 2001,
-  job: 'coder',
-  friends: ['Michael', 'Peter', 'Steven'],
-  hasDriversLicense: true,
+// const zohaib = {
+//   firstName: 'Zohaib',
+//   lastName: 'Ali',
+//   birthYear: 2001,
+//   job: 'coder',
+//   friends: ['Michael', 'Peter', 'Steven'],
+//   hasDriversLicense: true,
 
-  // calcAge: function(birthYear) {
-  //   return 2037 - birthYear
-  // }
-  // calcAge: function() {
-  //   console.log(this)
-  //   return 2037 - this.birthYear
-  // }
-  calcAge: function() {
-    this.age = 2037 - this.birthYear
-    return this.age
-  },
-  summarise: function() {
-    // Jonas is a 46-year old teacher, and he has a/no driver's license
-    this.summary = `${this.firstName} is a ${this.calcAge()}-old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
-    return this.summary
+//   // calcAge: function(birthYear) {
+//   //   return 2037 - birthYear
+//   // }
+//   // calcAge: function() {
+//   //   console.log(this)
+//   //   return 2037 - this.birthYear
+//   // }
+//   calcAge: function() {
+//     this.age = 2037 - this.birthYear
+//     return this.age
+//   },
+//   summarise: function() {
+//     // Jonas is a 46-year old teacher, and he has a/no driver's license
+//     this.summary = `${this.firstName} is a ${this.calcAge()}-old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+//     return this.summary
+//   }
+// }
+
+// console.log(zohaib.calcAge())
+// console.log(zohaib['calcAge']())
+// console.log(`Zohaib's age is ${zohaib.age}`)
+// console.log(zohaib.age)
+// console.log(zohaib.age)
+// console.log(zohaib.age)
+// console.log(zohaib.summarise())
+
+const mark = {
+  firstName: 'Mark',
+  lastName: 'Miller',
+  weight: 78,
+  height: 1.69,
+  calcBMI: function() {
+    this.bmi = this.weight / (this.height ** 2)
   }
 }
 
-console.log(zohaib.calcAge())
-console.log(zohaib['calcAge']())
-console.log(`Zohaib's age is ${zohaib.age}`)
-console.log(zohaib.age)
-console.log(zohaib.age)
-console.log(zohaib.age)
-console.log(zohaib.summarise())
+const john = {
+  firstName: 'John',
+  lastName: 'Smith',
+  weight: 92,
+  height: 1.95,
+  calcBMI: function() {
+    this.bmi = this.weight / (this.height ** 2)
+  }
+}
+
+mark.calcBMI()
+const markBMI = mark.bmi
+john.calcBMI()
+const johnBMI = john.bmi
+
+if (markBMI > johnBMI) {
+  console.log(`${mark.firstName} ${mark.lastName}'s BMI ${markBMI} is higher than ${john.firstName} ${john.lastName}'s ${johnBMI}`)
+} else {
+  console.log(`${john.firstName} ${john.lastName}'s BMI ${johnBMI} is higher than ${mark.firstName} ${mark.lastName}'s ${markBMI}`)
+}
