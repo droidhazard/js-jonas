@@ -381,19 +381,51 @@
 //   }
 // }
 
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weight repetition ${rep}`)
+// }
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weight repetition ${rep}`)
+// let rep = 1
+// while (rep <= 10) {
+//   console.log(`WHILE: Lifting weight repetition ${rep}`)
+//   rep++
+// }
+
+// let dice;
+// while (dice !== 6) {
+//   dice = Math.trunc(Math.random() * 6) + 1
+//   console.log(`You rolled ${dice}`)
+// }
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const tips = []
+const totals = []
+
+
+const calcTip = (bills) => {
+  for (let i = 0; i < bills.length; i++) {
+    let bill = bills[i]
+    let tipPercentage = 0
+    bill >= 300 ? tipPercentage = 20 : tipPercentage = 15
+    const tipAmount = (bill / 100) * tipPercentage
+    // console.log(`The Bill value was ${bill}, The Tip being ${tipPercentage}%:${tipAmount}, Your total bill is ${bill + tipAmount}`)
+    tips.push(tipAmount)
+    totals.push(bill + tipAmount)
+  }
 }
 
-let rep = 1
-while (rep <= 10) {
-  console.log(`WHILE: Lifting weight repetition ${rep}`)
-  rep++
+const calcAverage = (values) => {
+  let total = 0;
+  for (let i = 0; i < values.length ; i++) {
+    let value = values[i]
+    total += value;
+  }
+  return total / values.length
 }
 
-let dice;
-while (dice !== 6) {
-  dice = Math.trunc(Math.random() * 6) + 1
-  console.log(`You rolled ${dice}`)
-}
+calcTip(bills)
+console.log("Bills: ", bills)
+console.log("Calculated Tips: ", tips)
+console.log("Total of Bills: ", totals)
+console.log("Average Tip: ", calcAverage(tips))
+console.log("Average Total Price: ", calcAverage(totals))
